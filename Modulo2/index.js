@@ -29,3 +29,30 @@ function calcMedia(a,b,c,d) {
 }
 
 console.log(calcMedia(...notas))
+
+
+// destructuring
+
+let newAluno = {
+    nome: 'Junior',
+    idade: 19,
+    notas: {
+        bimestre1: {
+            a1:8,
+            a2: 9,
+            a3: 7
+
+        },
+        bimestre2: {
+            a1:6,
+            a2: 9,
+            a3: 6
+        }
+    }
+}
+
+let  { notas: {
+    bimestre2: notasBimestre2
+}} = newAluno
+
+console.log(notasBimestre2)
